@@ -1,44 +1,29 @@
-from .fly_behaviours import FlyNoWay, FlyWithWings
-from .quack_behaviours import Quack
+from interface import FlyBehaviour, QuackBehaviour
 
+class Duck():
+    def __init__(
+        self,
+        fly_behavior: FlyBehaviour,
+        quack_behavior: QuackBehaviour,
+        name: str
+    ): 
+        self.name = name
+        self._fly_behavior = fly_behavior
+        self._quack_behavior = quack_behavior
 
-@Abstract
-class Duck:
-    def __init__(self):
-        self.quack_behaviour = None
-        self.fly_behaviour = None
-    
-    def perform_quack(self):
-        self.quack_behaviour.quack()
-    
     def perform_fly(self):
-        self.fly_behaviour.fly()
-    
-    def set_quack_behaviour(self, qb):
-        self.quack_behaviour = qb
-    
-    def set_fly_behaviour(self, fb):
-        self.fly_behaviour = fb
-    
-    def swim(self):
-        print("All ducks float, even decoys!")
-    
+        self._fly_behavior.fly()
+
+    def perform_quack(self):
+        self._quack_behavior.quack()
+
+    def set_fly_behavior(self, fly_behavior: FlyBehaviour):
+        self._fly_behavior = fly_behavior
+
+    def set_quack_behavior(self, quack_behavior: QuackBehaviour):
+        self._quack_behavior = quack_behavior
+
     def display(self):
-        raise NotImplementedError()
-
-
-class ModelDuck(Duck):
-    def __init__(self):
-        super(Duck, self).__init__()
-        self.fly_behaviour = FlyNoWay()
-        self.quack_behaviour = Quack()
-    
-    def display(self):
-        print("I'm a model duck")
-
-
-class MallardDuck(Duck):
-    def __init__(self):
-        super(MallardDuck, self).__init__()
-        self.quack_behaviour = Quack()
-        self.fly_behaviour = FlyWithWings()
+        print(self.name)
+        self.perform_fly()
+        self.perform_quack()

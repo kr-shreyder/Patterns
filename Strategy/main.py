@@ -1,13 +1,28 @@
-from ducks import MallardDuck, ModelDuck
-from fly_behaviours import FlyRocketPowered
+from behaviours.fly import FlyOnWings, FlyNoFLy
+from behaviours.quack import QuackNoQuack, QuackRarely
+from duck import Duck
 
+fly_on_wings = FlyOnWings()
+fly_no_fly = FlyNoFLy()
+quack_mute = QuackNoQuack()
+quack_rare = QuackRarely()
 
-if __name__ == "__main__":
-    mallard = MallardDuck()
-    mallard.perform_quack()
-    mallard.perform_fly()
+saxon_duck = Duck(
+    name="Саксонская утка",
+    fly_behavior=fly_on_wings,
+    quack_behavior=quack_rare
+)
+rubber_duck = Duck(
+    name="Резиновая утка",
+    fly_behavior=fly_no_fly,
+    quack_behavior=quack_mute
+)
 
-    model = ModelDuck()
-    model.perform_fly()
-    model.set_fly_behaviour(FlyRocketPowered())
-    model.perform_fly()
+ducks = [
+    saxon_duck,
+    rubber_duck,
+]
+
+for duck in ducks:
+    duck.display()
+    print()
