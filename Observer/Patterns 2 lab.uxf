@@ -4,24 +4,29 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>209</x>
+      <x>528</x>
       <y>330</y>
       <w>187</w>
-      <h>121</h>
+      <h>198</h>
     </coordinates>
     <panel_attributes>::WeatherData
 --
 getTemperature()
 getHumidity()
 getPressure()
+
+addObserver()
+deleteObserver()
+notifyObservers()
+
 measurementsChanged()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>572</x>
-      <y>88</y>
+      <x>891</x>
+      <y>143</y>
       <w>176</w>
       <h>88</h>
     </coordinates>
@@ -34,8 +39,8 @@ update()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>220</x>
-      <y>66</y>
+      <x>539</x>
+      <y>121</y>
       <w>165</w>
       <h>121</h>
     </coordinates>
@@ -50,8 +55,8 @@ setChanged()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>572</x>
-      <y>473</y>
+      <x>891</x>
+      <y>528</y>
       <w>165</w>
       <h>77</h>
     </coordinates>
@@ -65,8 +70,8 @@ update()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>572</x>
-      <y>374</y>
+      <x>891</x>
+      <y>429</y>
       <w>165</w>
       <h>77</h>
     </coordinates>
@@ -80,8 +85,8 @@ update()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>572</x>
-      <y>275</y>
+      <x>891</x>
+      <y>330</y>
       <w>165</w>
       <h>77</h>
     </coordinates>
@@ -95,8 +100,8 @@ update()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>33</x>
-      <y>572</y>
+      <x>352</x>
+      <y>627</y>
       <w>165</w>
       <h>77</h>
     </coordinates>
@@ -110,8 +115,8 @@ notify()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>220</x>
-      <y>572</y>
+      <x>539</x>
+      <y>627</y>
       <w>165</w>
       <h>77</h>
     </coordinates>
@@ -125,8 +130,8 @@ notify()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>407</x>
-      <y>572</y>
+      <x>726</x>
+      <y>627</y>
       <w>165</w>
       <h>77</h>
     </coordinates>
@@ -140,19 +145,19 @@ notify()
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>297</x>
-      <y>176</y>
+      <x>616</x>
+      <y>231</y>
       <w>33</w>
-      <h>176</h>
+      <h>121</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>726</x>
-      <y>143</y>
+      <x>1045</x>
+      <y>198</y>
       <w>66</w>
       <h>198</h>
     </coordinates>
@@ -162,8 +167,8 @@ notify()
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>726</x>
-      <y>121</y>
+      <x>1045</x>
+      <y>176</y>
       <w>99</w>
       <h>319</h>
     </coordinates>
@@ -173,8 +178,8 @@ notify()
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>726</x>
-      <y>99</y>
+      <x>1045</x>
+      <y>154</y>
       <w>121</w>
       <h>440</h>
     </coordinates>
@@ -184,8 +189,8 @@ notify()
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>374</x>
-      <y>121</y>
+      <x>693</x>
+      <y>165</y>
       <w>220</w>
       <h>33</h>
     </coordinates>
@@ -195,52 +200,41 @@ notify()
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>110</x>
-      <y>440</y>
+      <x>429</x>
+      <y>517</y>
       <w>187</w>
-      <h>154</h>
+      <h>132</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>150.0;10.0;10.0;120.0</additional_attributes>
+    <additional_attributes>150.0;10.0;10.0;100.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>297</x>
-      <y>440</y>
+      <x>616</x>
+      <y>517</y>
       <w>33</w>
-      <h>154</h>
+      <h>132</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>319</x>
-      <y>440</y>
+      <x>638</x>
+      <y>517</y>
       <w>187</w>
-      <h>154</h>
+      <h>132</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;150.0;120.0</additional_attributes>
+    <additional_attributes>10.0;10.0;150.0;100.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>385</x>
-      <y>297</y>
-      <w>209</w>
-      <h>99</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;70.0;170.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>385</x>
-      <y>396</y>
+      <x>704</x>
+      <y>352</y>
       <w>209</w>
       <h>33</h>
     </coordinates>
@@ -250,12 +244,34 @@ notify()
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>385</x>
-      <y>418</y>
+      <x>704</x>
+      <y>440</y>
+      <w>209</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>704</x>
+      <y>473</y>
       <w>209</w>
       <h>110</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;170.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>693</x>
+      <y>187</y>
+      <w>220</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;10.0</additional_attributes>
   </element>
 </diagram>
