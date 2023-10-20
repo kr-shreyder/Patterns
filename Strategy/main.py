@@ -1,9 +1,9 @@
-from behaviours.fly import FlyOnWings, FlyNoFLy
+from behaviours.fly import FlyOnWings, FlyNoFly
 from behaviours.quack import QuackNoQuack, QuackRarely
 from duck import Duck
 
 fly_on_wings = FlyOnWings()
-fly_no_fly = FlyNoFLy()
+fly_no_fly = FlyNoFly()
 quack_mute = QuackNoQuack()
 quack_rare = QuackRarely()
 

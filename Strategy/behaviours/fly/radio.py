@@ -1,5 +1,5 @@
 from interface import FlyBehaviour
 
-class FlyThrow(FlyBehaviour):
+class FlyRadio(FlyBehaviour):
     def fly(self):
         print("Я летаю на радиоуправлении")
