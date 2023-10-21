@@ -44,6 +44,9 @@ class Milk(FlavoringDecorator):
     def __init__(self, baverage: Baverage, price: float, description: str,):
         super().__init__(baverage, price, description)
 
+class Soy(FlavoringDecorator):
+    def __init__(self, baverage: Baverage, price: float, description: str,):
+        super().__init__(baverage, price, description)
 
 class Choco(FlavoringDecorator):
     def __init__(self, baverage: Baverage, price: float, description: str):
@@ -52,7 +55,7 @@ class Choco(FlavoringDecorator):
 
 baverage = Latte(price=100, description="Большой латте")
 baverage = Milk(baverage=baverage, price=100, description="Молоко")
-baverage = Milk(baverage=baverage, price=100, description="Молоко")
+baverage = Soy(baverage=baverage, price=40, description="Соя")
 baverage = Choco(baverage=baverage, price=100, description="Шоколад")
 print(baverage.get_description())
 print(baverage.cost())
