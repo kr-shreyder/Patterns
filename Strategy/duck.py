@@ -1,6 +1,7 @@
 from interface import FlyBehaviour, QuackBehaviour
+from abc import ABC
 
-class Duck():
+class Duck(ABC):
     def __init__(
         self,
         fly_behavior: FlyBehaviour,
@@ -27,3 +28,6 @@ class Duck():
         print(self.name)
         self.perform_fly()
         self.perform_quack()
+
+class DuckExtnd(Duck):
+    ...
