@@ -20,17 +20,24 @@ rubber_duck = Duck(
     quack_behavior=quack_mute
 )
 
-ducks = [
-    saxon_duck,
-    rubber_duck,
-]
+# ducks = [
+#     saxon_duck,
+#     rubber_duck,
+# ]
 
-for duck in ducks:
-    duck.display()
-    print()
+# for duck in ducks:
+#     duck.display()
+#     print()
 
-rubber_duck.set_fly_behavior(fly_radio)
+# rubber_duck.set_fly_behavior(fly_radio)
 
-for duck in ducks:
-    duck.display()
-    print()
+# for duck in ducks:
+#     duck.display()
+#     print()
+
+def test(Duck: duck):
+    duck.perform_quack()
+    duck.perform_fly()
+
+test(saxon_duck)
+
